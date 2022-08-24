@@ -14,6 +14,8 @@ private :
 public:
 	Snake(SDL_Renderer* renderer, int x, int y, int direction);
 	~Snake();
+	Snake(const Snake&) = delete;
+	Snake& operator=(const Snake&) = delete;
 
 	SnakePart* getHead();
 

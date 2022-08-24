@@ -18,6 +18,8 @@ private:
 public:
 	Map(SDL_Renderer* renderer);
 	~Map();
+	Map(const Map&) = delete;
+	Map& operator=(const Map&) = delete;
 
 	void render();
 	
